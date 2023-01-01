@@ -1,0 +1,258 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>MovieDB</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm  fixed-top ">
+            <!-- container for fitting in the web page -->
+            <div class="container">
+                <!-- for small and extra small screens to toggle nav bar , data toggle to quickly on and off the bar , data-target refers to the id of navbar-->
+                <!-- To control (show/hide) the collapsible content, add the data-toggle="collapse" data-target is in line 30 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <!-- Icon for the navbar ie 3 lines -->
+                    <span class="navbar-toggler-icon"></span>    
+                </button>
+                <!-- you can display the logo/brand in the nav brand when cliked takes you to the homepage -->
+                <!-- you want the page to display the logo independet to size of the screen -->
+                <!-- <a class="navbar-brand  ml-auto" href="./index.html">Ristorante Con Fusion</a> -->
+                 <a class="navbar-brand" href="#"><img class="newimg" src="imdb.png" height="30" width="41"></a> 
+                <!-- A div tag like a condition to execute small or extra small screens if id is navbar is collapsed-->
+                <div class="collapse navbar-collapse" id = "Navbar">
+                <!-- set of links in the navbar , mr auto is to specify the right margin auto content is pushed to left -->
+                <ul class="navbar-nav  mr-auto">
+                    <!-- Create a list create an anchor to the destiantion page , active to one of them to highlight-->
+                    <!-- fa fa-home is font awesome deafault home font fa-lg is large-->
+                    <li class="nav-item active"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./movies.html"><span class="fa fa-movie fa-lg"></span> Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./tvshows.html"><span class="fa fa-tv fa-lg"></span> TV Shows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./anime.html"><span class="fa fa-anime fa-lg"></span>Anime</a></li>
+        
+                    </ul>
+                </div>    
+            </div>
+            </nav>
+            <br>
+            <!-- <nav class="navbar">
+                <div class="logo  mt-0 justify-content-center">
+                    <a><img class="newimg" src="imdb.png" height="30" width="100"></a>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#"><div class="text">Home</div></a></li>
+                    <li><a href="#"><div class="text">Movies</div></p></a></li>
+                    <li><a href="#"><div class="text">TV Shows</div></a></li>
+                    <li><a href="#"><div class="text">Anime</div></a></li>
+                </ul>
+
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav> -->
+
+
+
+        <header class="jumbotron">
+        <div class="container">
+            <h1 style="color:yellow" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"class="text-center mt-5 ">MovieDb</h1>
+            <form id="movieForm" autocomplete="off">
+                <div class="form-group">
+                    <input class="form-control"type="text" id="movie" placeholder="Enter the movie name">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-danger btn-block">Search</button>
+                </div>
+            </form> 
+        </div>
+        </header>
+            <div id="result">
+
+            </div>
+
+
+
+
+            <div class="row row-content">
+                <!-- Carousel -->
+                <div class="col">
+                    <div id="mycarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval=2000>
+                        <div class="carousel-inner" role="listbox" >
+                            <div class="carousel-item active">
+                                <a href="./index.html">
+                                    <img class="d-block img-fluid" src="newimdb.jpg" 
+                                    alt = "imdb">
+                                </a>
+                                <div class="carousel-caption  d-none d-md-block">
+                                    <h2 style="color: black">Movie DataBase <span class="badge badge-danger">NEW</span></h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="./anime.html">
+                                    <img class="d-block img-fluid" src="naruto.png" alt="anime">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Anime <span class="badge badge-danger">NEW</span></h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="./tvshows.html">
+                                    <img class="d-block img-fluid"  src="newhbo.jpg" alt="netflix">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2 style="color:white">TV Shows <span class="badge badge-secondary">NEW</span></h2>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="./movies.html">
+                                    <img class="d-block img-fluid"  src="newwb.jpg" alt="movies">
+                                </a>
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Movies <span class="badge badge-danger">NEW</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Indicators for the current slide -->
+                        <ol class="carousel-indicators">
+                            <li data-target = "#mycarousel" data-slide-to="0" class="active"></li>
+                            <li data-target = "#mycarousel" data-slide-to = "1"></li>
+                            <li data-target = "#mycarousel" data-slide-to = "2"></li>
+                            <li data-target = "#mycarousel" data-slide-to = "3"></li>
+                        </ol>
+                        <!-- Manual control of carousel -->
+                        <!-- Previous control -->
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <!-- Next control -->
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            </a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+ 
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="JS/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var apikey = "f173b694"
+
+                $('#movieForm').submit(function(event){
+                    event.preventDefault()
+                    var movie = $('#movie').val()
+                    var url ="https://www.omdbapi.com/?apikey="+apikey
+
+                    $.ajax({
+                        method:'GET',
+                        url:url+"&t="+movie,
+                        success : function(data){
+                            console.log(data)
+
+                            // result = `
+                            //     <h2 class="movieTitle">${data.Title}</h2>
+                            //     <img style="float:left" class="img-thumbnail" width="200" height="200" src="${data.Poster}"/>
+                            //     <h3 class="h3data">${data.Released}</h2>
+                            //     <h3 class="h3data">${data.Genre}</h2>
+                            //     <h3 class="h3data">${data.Director}</h2>
+
+
+                            //     `;
+                            //Actors , Awards , imdbRating , 
+
+                            if(data.Response=="False"){
+                                   
+                            }
+                            if(data.Response!="False"){
+                            result = `
+                            <div class="row row-content">
+                                <div class="container">
+                                    <div class="card">
+                                        <div class="movieTitle">
+                                            <h2 class="ml-4 mt-1 mb-0">${data.Title}</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-10 col-md-3 offset-md-0 offset-2">
+                                                    <img style="float:left" class="img-thumbnail" width="200" height="200" src="${data.Poster}"/>
+                                                </div>
+
+                                                <div class="col-12 col-md-9 mt-md-0 mt-2">
+                                                    <form>
+                                                        <div class="row reserve-content firstcontent">
+                                                            <div class="col-4 col-md-3">
+                                                                <h5>Date Released</h5>
+                                                            </div>
+                                                            <div class="col-8 col-md-6">
+                                                                <h3 class="h3data">${data.Released}</h2>
+                                                            </div>
+                            
+                                                        </div>
+
+                                                        <div class="row reserve-content">
+                                                            <div class="col-4 col-md-3">
+                                                                <h5>Cast</h5>
+                                                            </div>
+                                                            <div class="col-8 col-md-6">
+                                                                <h3 class="h3data">${data.Actors}</h2>
+                                                            </div>
+                            
+                                                        </div>
+
+                                                        <div class="row reserve-content">
+                                                            <div class="col-4 col-md-3">
+                                                                <h5>Awards</h5>
+                                                            </div>
+                                                            <div class="col-8 col-md-6">
+                                                                <h3 class="h3data">${data.Awards}</h2>
+                                                            </div>
+                            
+                                                        </div>
+
+                                                        <div class="row reserve-content">
+                                                            <div class="col-4 col-md-3">
+                                                                <h5>MovieDB Rating</h5>
+                                                            </div>
+                                                            <div class="col-8 col-md-6">
+                                                                <h3 class="h3data">${data.imdbRating}</h2>
+                                                            </div>
+                            
+                                                        </div>
+                                                </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            `;
+                            }
+
+
+                            $("#result").html(result)
+                        }
+
+                    })
+                })
+            })
+        </script>
+    </body>
+</html>
+
+
+<!-- Here is your key: f173b694 -->

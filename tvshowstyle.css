@@ -1,0 +1,37 @@
+.row-content{
+    color:#101820FF;
+    padding:2px 0px 2px 2px;
+}
+
+
+.h5data{
+    color : white;
+}
+
+.h3data{
+    color : whitesmoke;
+}
+
+.reserve-content{
+    border: 1px solid rgba(255,255,255,.10);
+    padding : 6px 0px 2px 0px;
+}
+
+.line{
+    border:1px solid silver;
+    margin-bottom: 5px;
+}
+
+.card-body{
+    color :#101820FF;
+}
+
+.movieTitle{
+    background-color: rgba(16, 24, 32, 0.555);
+}
+
+.newimg{
+    float:left;
+    width : 50px;
+    height : 25px;
+}

@@ -1,0 +1,33 @@
+.row-content{
+    color: #2D2926FF;
+    padding:2px 0px 2px 2px;
+    /* border: 1px solid silver; */
+}
+
+.h5data{
+    color : white;
+}
+
+.h3data{
+    color : whitesmoke;
+}
+
+.reserve-content{
+    border: 1px solid rgba(255,255,255,.10);
+    padding : 6px 0px 2px 0px;
+}
+
+.line{
+    border:1px solid silver;
+    margin-bottom: 5px;
+}
+
+.movieTitle{
+    background-color:  rgba(45, 41, 38, 0.753);
+}
+
+.newimg{
+    float:left;
+    width : 50px;
+    height : 25px;
+}
